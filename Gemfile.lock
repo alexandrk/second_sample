@@ -109,6 +109,7 @@ GEM
     mini_portile (0.5.1)
     multi_json (1.8.0)
     multi_test (0.0.2)
+    newrelic_rpm (3.6.7.152)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     pg (0.12.2)
@@ -211,6 +212,7 @@ DEPENDENCIES
   guard-rspec (= 1.2.1)
   guard-spork (= 1.2.0)
   jquery-rails (= 2.0.2)
+  newrelic_rpm
   pg (= 0.12.2)
   rails (= 3.2.14)
   rspec-rails (= 2.11.0)
