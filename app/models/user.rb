@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
 
   before_save { |user| user.email.downcase! }
   #after_validation { self.errors.messages.delete(:password_digest) }
+  before_save :create_remember_token
 
   validates :name, presence: true, length: { maximum: 50 }
 
@@ -15,4 +16,9 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 6 }
   validates :password_confirmation, presence: true
 
+  private
+
+    def create_remember_token
+      self.remember_token = SecureRandom.urlsafe_base64
+    end
 end

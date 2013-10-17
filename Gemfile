@@ -10,6 +10,7 @@ gem 'jquery-rails', '2.0.2'
 gem 'newrelic_rpm'
 
 group :development, :test do
+  gem 'debugger'
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
   gem 'guard-rspec', '1.2.1'
@@ -31,7 +32,7 @@ group :test do
   gem 'factory_girl_rails', '4.1.0'
   gem 'cucumber-rails', '1.2.1', :require => false
   gem 'database_cleaner', '0.7.0'
-  # gem 'launchy', '2.1.0'
+  gem 'launchy', '2.1.0'
   # gem 'rb-fsevent', '0.9.1', :require => false
   # gem 'growl', '1.0.3'
 end
